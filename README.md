@@ -1,2 +1,3 @@
 # GroovyConsole-helpers
-A set of utilities to help develop Groovy scripts
+
+A set of Groovy scripts to help manage the Jackrabbit/Oak Repository
