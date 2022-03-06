@@ -10,6 +10,8 @@ This is a helper utility that can delete nodes in the JCR Oak-Run console. I too
 4. Modify the config.json file to contain all the nodes you would like to delete from the CRX/DE
 5. Execute rmNode(session, '/path/to/the/config.json')
 
+Note: That this script can use Google GSON but as of now is built with GSON 2.8.0 this is because of how oak-run is built it includes its dependencies within the JAR (https://github.com/apache/jackrabbit-oak/blob/trunk/oak-run/src/main/assembly/oak-run.xml#L29-L56) which includes GSON 2.8.0 (https://github.com/apache/jackrabbit-oak/blob/trunk/oak-run/pom.xml#L367-L371). If you would ever like to include other JARs within the scope of oak-run you can add dependencies to the POM and run a build in order to get other libs availabe at runtime of oak-run.
+
 ## Contributor
 
 [Patrique Legault](https://twitter.com/_patlego)
